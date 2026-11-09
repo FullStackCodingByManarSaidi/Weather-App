@@ -70,6 +70,34 @@
 
     <!-- Lier le fichier JavaScript -->
     <script src="script.js"></script>
+<!-- j'ajoute une select pour afficher les pays  -->
+ <!-- // 5. Événement du bouton Rechercher
+// ===================================
 
+searchButton.addEventListener("click", function () {
+
+    const city = cityInput.value.trim();
+
+    if (city === "") {
+        message.textContent = "Veuillez entrer le nom d'une ville.";
+        return;
+    }
+
+    searchCity(city);
+
+});
+
+
+// ===================================
+// 6. Rechercher avec la touche Entrée
+// ===================================
+
+cityInput.addEventListener("keydown", function (event) {
+
+    if (event.key === "Enter") {
+        searchButton.click();
+    }
+
+}); -->
 </body>
 </html>
