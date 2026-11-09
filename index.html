@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Weather App</title>
+
+    <!-- Lier le fichier CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- En-tête -->
+    <header>
+        <h1>Weather App</h1>
+        <p>Découvrez la météo de votre ville</p>
+    </header>
+
+    <!-- Contenu principal -->
+    <main>
+
+        <!-- Recherche de ville -->
+        <section class="search-section">
+
+            <input
+                type="text"
+                id="cityInput"
+                placeholder="Entrez le nom de votre ville"
+            >
+
+            <button id="searchButton">
+                Rechercher
+            </button>
+
+        </section>
+
+        <!-- Message d'erreur ou de chargement -->
+        <p id="message"></p>
+
+        <!-- Carte météo -->
+        <section class="weather-section">
+
+            <h2 id="cityName">Tangier</h2>
+
+            <p id="temperature">-- °C</p>
+
+            <p id="weatherDescription">Météo actuelle</p>
+
+            <div class="weather-details">
+
+                <p>
+                    Humidité :
+                    <span id="humidity">-- %</span>
+                </p>
+
+                <p>
+                    Vitesse du vent :
+                    <span id="windSpeed">-- km/h</span>
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Lier le fichier JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
