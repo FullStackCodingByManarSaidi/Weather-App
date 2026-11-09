@@ -184,3 +184,4 @@ cityInput.addEventListener("keydown", function (event) {
     }
 
 });
+document.write('hello')
